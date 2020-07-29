@@ -19,35 +19,39 @@
                                 </a>
                             </li>
 
-                            <li>
-                                <a href="<?= base_url('admin/order') ?>" class="waves-effect">
-                                    <i class="mdi mdi-calendar-check"></i>
-                                    <span>Data Order</span>
+
+                        <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="mdi mdi-email-outline"></i>
+                                    <span>List Data</span>
                                 </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="<?= base_url('admin/order') ?>">List Order</a></li>
+                                    <li><a href="<?= base_url('admin/pelanggan') ?>">List Pelanggan</a></li>
+                                    <li><a href="<?= base_url('admin/teknisi') ?>">List Teknisi</a></li>
+                                </ul>
                             </li>
 
-                                <li>
-                                <a href="calendar.html" class="waves-effect">
-                                    <i class="mdi mdi-calendar-check"></i>
-                                    <span>Data Pelanggan</span>
-                                </a>
-                            </li>
+
+
 
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="mdi mdi-email-outline"></i>
-                                    <span> Email </span>
+                                    <span> Report </span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="email-inbox.html">Inbox</a></li>
-                                    <li><a href="email-read.html">Email Read</a></li>
-                                    <li><a href="email-compose.html">Email Compose</a></li>
+                                    <li><a href="email-inbox.html">Report Order</a></li>
+                                    <li><a href="email-read.html">Report Pelanggan</a></li>
+                                    <li><a href="email-compose.html">Report Teknisi</a></li>
                                 </ul>
                             </li>
 
-        
 
                         </ul>
+
+
+
                     </div>
                     <!-- Sidebar -->
                 </div>

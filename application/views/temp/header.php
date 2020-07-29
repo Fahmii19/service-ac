@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="#">
 
-    <title>Service</title>
+    <title><?= $title ?></title>
 
     <!-- Bootstrap core CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -17,6 +17,25 @@
 
     <!-- Custom styles for this template -->
     <link href="<?= base_url('assets/carousel.css'); ?>" rel="stylesheet">
+
+            <!-- Bootstrap Css -->
+        <link href="<?= base_url('assets/admin/css/bootstrap.min.css') ?>" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="<?= base_url('assets/admin/css/icons.min.css') ?>" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="<?= base_url('assets/admin/css/app.min.css') ?>"  rel="stylesheet" type="text/css" />
+
+
+        <link href="<?= base_url('assets/admin/libs/select2/css/select2.min.css') ?>" rel="stylesheet" type="text/css" />
+        <link href="<?= base_url('assets/admin/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css') ?>" rel="stylesheet">
+        <link href="<?= base_url('assets/admin/libs/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css') ?>" rel="stylesheet">
+        <link href="<?= base_url('assets/admin/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css') ?>" rel="stylesheet" />
+
+
+
+
+
+
   </head>
   <body>
 
@@ -28,14 +47,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="<?= base_url('homepage')?>">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url('homepage/order')?>">Pesan</a>
             </li>
                 <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="<?= base_url('homepage/cek_pemesanan')?>">Cek Pemesanan</a>
             </li>
 
 

@@ -5,7 +5,7 @@ class Homepage extends CI_Controller {
 
 	public function index()
 	{
-		$data['judul'] = 'Homepage';
+		$data['title'] = 'Homepage';
      	$this->load->view('temp/header', $data);
       	$this->load->view('homepage');
       	$this->load->view('temp/footer');
@@ -13,9 +13,17 @@ class Homepage extends CI_Controller {
 
 	public function order()
 	{
-		$data['judul'] = 'Order';
+		$data['title'] = 'Order';
      	$this->load->view('temp/header', $data);
       	$this->load->view('order');
+      	$this->load->view('temp/footer');
+	}
+
+	public function cek_pemesanan()
+	{
+		$data['title'] = 'Cek Pemesanan';
+     	$this->load->view('temp/header', $data);
+      	$this->load->view('cek_pemesanan');
       	$this->load->view('temp/footer');
 	}
 

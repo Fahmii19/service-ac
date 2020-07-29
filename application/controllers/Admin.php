@@ -23,4 +23,24 @@ class Admin extends CI_Controller {
 	}
 
 
+	public function teknisi()
+	{
+		$data['title'] = 'Teknisi';
+     	$this->load->view('temp/admin/header', $data);
+     	$this->load->view('temp/admin/sidebar');
+      	$this->load->view('admin/teknisi');
+      	$this->load->view('temp/admin/footer');
+	}
+
+
+	public function pelanggan()
+	{
+		$data['title'] = 'Pelanggan';
+     	$this->load->view('temp/admin/header', $data);
+     	$this->load->view('temp/admin/sidebar');
+      	$this->load->view('admin/pelanggan');
+      	$this->load->view('temp/admin/footer');
+	}
+
+
 }
