@@ -9,7 +9,7 @@
                                         <h4 class="card-title">Form Pemesanan Service AC</h4>
                                         <p class="card-title-desc"><strong style="color: red">Perhatikan!</strong> Kolom yang bertanda * wajib diisi</p>
 
-                                        <form id="form-horizontal" class="form-horizontal form-wizard-wrapper" action="" method="post" >
+                                        <form id="form-horizontal" class="form-horizontal form-wizard-wrapper" action="<?= base_url('admin/tambah_order') ?>" method="post" >
 
                                             <h3>Data Pelanggan</h3>
                                             <fieldset>
@@ -105,12 +105,14 @@
                                                        <div class="form-group row">
                                                             <label class="col-lg-3 col-form-label">Jenis Layanan</label>
                                                             <div class="col-lg-9">
-                                                                <select id="ddlCreditCardType" name="jenis_layanan" class="form-control">
-                                                                    <option value="">--Pilih Layanan--</option>
+                                                                <select id="ddlCreditCardType" 
+                                                                name="jenis_layanan" class="form-control">
+                                                                <option value="">--Pilih Layanan--</option>
+                                                                 
+                                                                 
                                                                     <option value="">Instalasi Ac</option>
-                                                                    <option value="">Isi Freon</option>
-                                                                    <option value="">Cuci Ac</option>
-                                                                    <option value="">Service Ac</option>
+                                                       
+
                                                                 </select>
                                                                    <small class="form-text text-muted">pilih dengan keperluan pada ac</small>
                                                             </div>
@@ -159,7 +161,7 @@
                                                                  <div class="form-group row">
                                                 
                                                             <div class="col-lg-9">
-                                                                <input id="txtCityBilling" name="telepon" type="number" class="form-control">
+                                                                <input id="txtCityBilling" name="total" type="number" class="form-control">
                                                             </div>
                                                         </div>
                                                                  <small class="form-text text-muted">unit ac yang kamu ingin service</small>
@@ -174,7 +176,7 @@
                                                                            <small class="form-text text-muted">Mohon, untuk diingat kode berikut untuk pelayanan service kedepannya.</small>
                                                             </div>
                                                             <div class="col-lg-2">
-                                                            	<button class="btn btn-success waves-effect waves-light" type="submit">Buat Kode</button>
+                                                            	<label class="btn btn-success waves-effect waves-light" type="submit">Buat Kode</label>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -184,7 +186,8 @@
                                                         <div class="form-group row">
                                                             <label  class="col-lg-3 col-form-label">Keluhan</label>
                                                             <div class="col-lg-9">
-                                                                <textarea id="txtAddress1Billing" name="keluhan" rows="4" class="form-control"></textarea>
+                                                                <textarea id="txtAddress1Billing" 
+                                                                name="keluhan" rows="4" class="form-control"></textarea>
 
                                                                            <small class="form-text text-muted">masukan permasalahan pada ac, agar teknisi cepat memperbaiki ac kamu</small>
 

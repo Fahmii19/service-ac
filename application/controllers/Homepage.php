@@ -18,6 +18,29 @@ class Homepage extends CI_Controller {
       	$this->load->view('order');
       	$this->load->view('temp/footer');
 	}
+	
+
+	// public function tambah_order()
+	// {
+	// 	$pelanggan = array(
+	// 		'kode' = $kode,
+	// 		'nama' = $nama,
+	// 		'email' = $email,
+	// 		'telepon' = $telepon,
+	// 		'alamat' = $alamat
+	// 	);
+
+	// 	$order = array (
+	// 		'jenis_layanan' = $jenis_layanan,
+	// 		'keluhan' = $keluhan,
+	// 		'tgl_pengerjaan' = $tgl_pengerjaan,
+	// 		'waktu_pengerjaan' = $waktu_pengerjaan,
+	// 		'jumlah' = $jumlah,
+	// 		'merek_ac' = $merek
+
+	// 	);
+
+	// }
 
 	public function cek_pemesanan()
 	{
